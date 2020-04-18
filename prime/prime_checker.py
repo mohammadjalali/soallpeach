@@ -1,14 +1,16 @@
 import sys
+from math import sqrt
 
 file_name = sys.argv[1]
 
+def is_prime(n:int) -> bool:
 
-def is_prime(n: int) -> bool:
-    for m in range(3, n - 1):
-        if n % m == 0:
+    for i in range(2,int(sqrt(n))+1):
+        if n % i == 0:
             return False
-        return True
 
+    return True
+        
 
 with open(file_name) as input_numbers:
     for line in input_numbers:
