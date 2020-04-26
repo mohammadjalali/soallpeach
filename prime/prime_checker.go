@@ -16,8 +16,6 @@ func main() {
 
 	shit := strings.SplitN(tmp, "\n", len(tmp))
 
-	fmt.Println(shit)
-
 	for _, line := range shit {
 		it, _ := strconv.Atoi(line)
 		fmt.Println(isPrime(it))
