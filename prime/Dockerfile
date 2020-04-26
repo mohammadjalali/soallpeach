@@ -1,5 +1,5 @@
 FROM alpine:latest
 RUN mkdir /app
 WORKDIR /app
-COPY main /app
+COPY prime_checker /app
 ENTRYPOINT [ "./prime_checker" ]
