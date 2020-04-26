@@ -1,5 +1,5 @@
-FROM python3.8
-WORKDIR /home/mohammad/git/soallpeach/prime
-COPY prime_checker.py .
-
-ENTRYPOINT ["python", "prime_checker.py"]
+FROM alpine:latest
+RUN mkdir /app
+WORKDIR /app
+COPY main /app
+ENTRYPOINT [ "./prime_checker" ]

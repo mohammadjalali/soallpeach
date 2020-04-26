@@ -7,7 +7,7 @@ def is_prime(n: int) -> bool:
     for m in range(3, n - 1):
         if n % m == 0:
             return False
-        return True
+    return True
 
 
 with open(file_name) as input_numbers:
